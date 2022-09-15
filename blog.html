@@ -5,8 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header>
+        <div class="text-xl font-bold text-center my-5"><h1>Asked Questions</h1></div>
+    </header>
+    <!-- Main Section Start -->
+    <main class="container mx-auto">
+        <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white text-gray-900" data-inactive-classes="text-gray-500">
+            <h2 id="accordion-flush-heading-1">
+                <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left border-b border-gray-200 bg-white text-gray-900" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                <span class="md:text-xl text-lg">What are the differences between Local Storage and Session Storage ?</span>
+                <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h2>
+            <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
+                <div class="py-5 font-light border-b border-gray-200 bg-gray-50">
+                    <ul class="md:text-justify md:text-lg md:font-medium px-5">
+                        <li>1. Local Storage data does not expire, whereas Session Storage data is cleared when the page session ends.</li>
+                        <li>2. The storage capacity of Local Storage is 5MB/10MB, whereas The storage capacity of Session Storage is 5MB</li>
+                        <li>3. As Local Storage is not session-based, it must be deleted via javascript or manually whereas Session Storage is based on session and works per window or tab.</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 id="accordion-flush-heading-2">
+                <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-500 border-b border-gray-200" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                <span class="md:text-xl text-lg">What are the differences between global scope and block scope ?</span>
+                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h2>
+            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                <div class="py-5 font-light border-b border-gray-200 bg-gray-50">
+                    <p class="md:text-justify md:text-lg md:font-medium px-5">
+                        The variables defined outside of any function or curly brackets are known as global variables and have global scope. Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable. On the other hand, The block scope can be defined as the scope of the variables inside the curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or something else. You are only allowed to refer to these variables from within the curly brackets {}.
+                    </p>
+                </div>
+            </div>
+            <h2 id="accordion-flush-heading-3">
+                <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-500 border-b border-gray-200" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                <span class="md:text-xl text-lg">What is Event Loop in JavaScript ?</span>
+                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h2>
+            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                <div class="py-5 font-light border-b border-gray-200 bg-gray-50 md:text-justify md:text-lg md:font-medium px-5">
+                    <p>The event loop is the secret behind JavaScript's asynchronous programming. JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading.</p>
+                    <p>Whenever an async function is called, it is sent to a browser API. These are APIs built into the browser. Based on the command received from the call stack, the API starts its own single-threaded operation.</p>
+                </div>
+            </div>
+            <h2 id="accordion-flush-heading-4">
+                <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-500 border-b border-gray-200" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                <span class="md:text-xl text-lg">How many ways will we get undefine ?</span>
+                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h2>
+            <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                <div class="py-5 font-light border-b border-gray-200 bg-gray-50 md:text-justify md:text-lg md:font-medium px-5">
+                    <p>You can use template strings to write your string exactly how you want it to appear, without all the quotation marks and confusion. Template strings make it very easy to spot a missing space and make your string more readable.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Flowbite JS -->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </body>
 </html>
