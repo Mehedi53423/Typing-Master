@@ -143,17 +143,20 @@ button {
 
 #histories {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .card {
-  width: 100%;
+  width: 30%;
   height: 100%;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
@@ -186,7 +189,15 @@ button {
     padding: 0 20px;
     width: 100%;
   }
+  #histories {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   .card {
     flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
 }
